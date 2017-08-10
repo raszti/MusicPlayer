@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="play">P</string>
+    <string name="pause">II</string>
+    <string name="category_playlists">PLAYLISTS</string>
+    <string name="category_songs">SONGS</string>
+    <string name="category_albums">ALBUMS</string>
+    <string name="category_artists">ARTISTS</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="action_icon">Action icon</string>
+
+</resources>
