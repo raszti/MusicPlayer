@@ -10,7 +10,6 @@
     </style>
 
     <style name="MusicAppBarStyle" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <!-- Remove the shadow below the app bar -->
         <item name="elevation">2dp</item>
     </style>
 
@@ -26,7 +25,5 @@
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">#A8A19E</item>
     </style>
-
-
 
 </resources>

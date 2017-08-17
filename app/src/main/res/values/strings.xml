@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">MusicPlayer</string>
     <string name="play">P</string>
     <string name="pause">II</string>
@@ -8,5 +9,22 @@
     <string name="category_artists">ARTISTS</string>
     <string name="now_playing">Now Playing</string>
     <string name="action_icon">Action icon</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="payment_helper">BUY MORE SONGS</string>
+    <string name="total_price">TOTAL PRICE</string>
+    <string name="activity_txt_main">Main activity comes with 4 categories reachable by a viewpager.
+        And a small player with basic buttons on the bottom of the screen. Each category is a ListView.
+        \nThe Playlist items have a button for listing the songs, and a button to play playlist.
+        \nThe Songs have an add to playlist, and a play button.
+        \nThe Album items have a button to list the other songs of the album.
+        \nThe Artist items have a button to list the other songs by the artist.
+        \nThe small blue icon leads the user to the SongShop to buy more music.</string>
+    <string name="activity_txt_now_playing">The Now Playing activity contains a picture of the album
+         of the song, with an easy to access play/pause button, a SeekerBar, TextViews showing the artist and the
+        name of the song, and a button to reach the songlist.</string>
+    <string name="activity_txt_list">The List activity is always provide a list of the songs chosen
+         by the actor or the album. It is also used to help to choose the playlist when adding a song.</string>
+    <string name="activity_txt_shop">In the Song shop the user can buy new songs, add them to the cart, or remove them.
+        Pay Now button redirects the user to the PayPal checkout page.</string>
 
 </resources>

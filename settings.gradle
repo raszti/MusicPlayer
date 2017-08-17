@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':PayPalAndroidSDK-2.15.3'

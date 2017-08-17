@@ -1,6 +1,7 @@
 package com.example.android.musicplayer;
 
 import android.content.Intent;
+import android.widget.AdapterView;
 import android.widget.TextView;
 import android.app.Activity;
 import android.view.LayoutInflater;

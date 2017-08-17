@@ -2,10 +2,15 @@ package com.example.android.musicplayer;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import static android.view.View.GONE;
 import static com.example.android.musicplayer.MainActivity.playlists;
 import static com.example.android.musicplayer.MainActivity.songs;
 
@@ -19,7 +24,7 @@ public class SongLister extends AppCompatActivity{
         super.onCreate(savedInstanceState);
 
         // Set the content of the activity to use the list.xml layout file
-        setContentView(R.layout.list);
+        setContentView(R.layout.activity_lister);
 
 
         Bundle bundle = getIntent().getExtras();
@@ -51,7 +56,7 @@ public class SongLister extends AppCompatActivity{
             AddPlaylistAdapter addPlaylistAdapter = new AddPlaylistAdapter(this, playlists);
 
             // Get a reference to the ListView, and attach the adapter to the listView.
-            ListView listView = (ListView) findViewById(R.id.list);
+            ListView listView = (ListView) findViewById(R.id.lister);
             listView.setAdapter(addPlaylistAdapter);
         } else {
             // Create an SongAdapter, whose data source is a list of Songs.
@@ -61,10 +66,27 @@ public class SongLister extends AppCompatActivity{
             SongAdapter songAdapter = new SongAdapter(this, songArrayList);
 
             // Get a reference to the ListView, and attach the adapter to the listView.
-            ListView listView = (ListView) findViewById(R.id.list);
+            ListView listView = (ListView) findViewById(R.id.lister);
             listView.setAdapter(songAdapter);
+
+            final ImageView img = (ImageView) findViewById(R.id.close_info_lister);
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    TextView txt = (TextView) findViewById(R.id.info_lister);
+                    txt.setVisibility(View.GONE);
+                    img.setVisibility(View.GONE);
+                }
+            });
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
     }
 
     private int getPlaylistID(String listName) {

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light">
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,20 +21,39 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ekg"
-            android:tint="#FFFFFF"
+            android:layout_centerInParent="true"
             android:alpha="0.5"
             android:scaleType="centerCrop"
-            android:layout_centerInParent="true"/>
+            android:src="@drawable/ekg"
+            android:tint="#FFFFFF" />
 
         <ImageView
             android:id="@+id/play_now_button"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_centerInParent="true"
+            android:alpha="0.3"
             android:src="@drawable/ic_play_circle_filled_black_48dp"
-            android:tint="@color/colorLightGray"
-            android:alpha="0.3" />
+            android:tint="@color/colorLightGray" />
+
+        <TextView
+            android:id="@+id/info_now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="24dp"
+            android:text="@string/activity_txt_now_playing"
+            android:background="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <ImageView
+            android:id="@+id/close_info_now_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:tint="@color/colorPrimary" />
 
     </RelativeLayout>
 
@@ -47,8 +66,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:padding="16dp"
-        android:background="@color/colorLightGray" >
+        android:background="@color/colorLightGray"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/title_now"
@@ -56,30 +75,25 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:textSize="24sp"
-            android:text="Name of the song"
-            />
+            tools:text="Name of the song" />
 
         <TextView
             android:id="@+id/artist_now"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="Author"
-            />
+            tools:text="Author" />
 
         <ImageView
             android:id="@+id/go_to_songlist"
             android:layout_width="36dp"
             android:layout_height="36dp"
-            android:scaleType="centerCrop"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_queue_music_black_48dp"
-            android:tint="@android:color/tertiary_text_light"
-            android:layout_alignParentEnd="true" />
-
+            android:tint="@android:color/tertiary_text_light" />
 
     </RelativeLayout>
-
-
 
 </LinearLayout>

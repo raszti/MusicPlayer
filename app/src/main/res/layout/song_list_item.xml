@@ -7,17 +7,14 @@
     android:background="@color/colorLightGray"
     android:minHeight="88dp">
 
-
     <LinearLayout
         android:id="@+id/text_container"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:gravity="center_vertical"
         android:minHeight="88dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" >
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/artist_text_view"
@@ -45,23 +42,20 @@
         android:id="@+id/play_button"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="16dp"
-        android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/ic_play_circle_filled_black_48dp"
-        android:tint="@color/colorPrimary"
-        />
+        android:tint="@color/colorPrimary" />
 
     <ImageView
         android:id="@+id/addtolist_button"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginEnd="8dp"
         android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
         android:layout_toStartOf="@id/play_button"
         android:src="@drawable/ic_playlist_add_black_48dp"
-        android:tint="@color/colorPrimary"
-        />
-
+        android:tint="@color/colorPrimary" />
 
 </RelativeLayout>

@@ -5,14 +5,12 @@ public class Song {
     private String mNameOfArtist;
     private String mNameOfSong;
     private String mAlbum;
-    private String mGenre;
 
-    public Song(String nameOfArtist, String nameOfSong, String album, String genre)
+    public Song(String nameOfArtist, String nameOfSong, String album)
     {
         mNameOfArtist = nameOfArtist;
         mNameOfSong = nameOfSong;
         mAlbum = album;
-        mGenre = genre;
     }
 
     public String getNameOfArtist()
